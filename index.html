@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertei | Conversor de moeda</title>
+    <link rel="shortcut icon" href="assets/img/logo-2.svg" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/img/logo-convertei.svg" alt="Logo Convertei">
+        </header>
+        <div class="content">
+            <h1>Conversão de moeda</h1>
+            <p>API de taxas de câmbio publicado pelo <strong>Banco Central Europeu</strong></p>
+        </div>
+        <div class="info">
+            <input type="number" id="currency" placeholder="Digite um valor">
+            <div class="select-area">
+                <label class="label-from">DE</label>
+                <select id="from">
+                </select>
+                <label class="label-to">PARA</label>
+                <select id="to">
+                </select>
+            </div>
+            <button id="convert">Converter</button>
+        </div>
+        <span class="alert alert-from-to">Valores de conversão iguais</span>
+        <span class="alert alert-value">Adicione um valor</span>
+        <!--Result convert-->
+        <div id="result"></div>        
+        <footer></footer>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
